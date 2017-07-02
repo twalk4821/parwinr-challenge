@@ -1,0 +1,61 @@
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" href="#">
+      	<img class="logo" src="http://www.parwinr.com/assets/company/images/parWinr-logo-4c-structured.png">
+      </a>
+    </div>
+    <div class="search">
+      <input class="form-control mr-sm-2" type="text" placeholder="Search">
+      <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
+      	<img class="search-logo" src="http://www.endlessicons.com/wp-content/uploads/2015/08/search-icon-2.png">
+      </button>
+    </div>
+    <ul class="nav navbar-nav">
+      <li><a href="#">
+      	<img class="menu-item" src="http://www.iconsdb.com/icons/preview/gray/video-play-3-xxl.png">
+      </a></li>
+      <li><a href="#">
+      	<img class="menu-item" src="https://farm9.staticflickr.com/8669/16147223439_dd91cdf560_o.png">
+      </a></li>
+      <li><a href="#">
+      	<img class="menu-item" src="https://upload.wikimedia.org/wikipedia/commons/7/72/Message-icon-grey.png">
+      </a></li>
+      <li><a href="#">
+      <div>
+      	<img class="menu-item" src="http://aminoapps.com/static/img/user-icon-placeholder.png">
+      	</div>
+      </a></li>
+    </ul>
+  </div>
+</nav>
+
+<div class="image-frame">
+<img class='main-image'src="http://www.parwinr.com/assets/company/images/parWinr-CES-Postcard2.png">
+</div>
+
+<div class="video-section" id="featured">
+  <h5>Featured</h5>
+  <div class="row" ng-repeat="i in rangeFromNumber(rows[1]) track by $index">
+  	<video-list videos="videos"></video-list>
+  </div>
+  <button class="load-button" ng-click="handleClick(1)">. . .</button>
+</div>
+
+<div class="video-section">
+  <h5>Most Viewed</h5>
+  <div class="row" ng-repeat="i in rangeFromNumber(rows[2]) track by $index">
+  	<video-list videos="videos"></video-list>
+  </div>
+  <button class="load-button" ng-click="handleClick(2)">. . .</button>
+</div>
+
+<div class="video-section">
+  <h5>Recently Watched</h5>
+  <div class="row" ng-repeat="i in rangeFromNumber(rows[3]) track by $index">
+  	<video-list videos="videos"></video-list>
+  </div>
+  <button class="load-button" ng-click="handleClick(3)">. . .</button>
+</div>
+
+
