@@ -1,5 +1,9 @@
 {
   "name": "parwinr",
   "private": true,
-  "dependencies": {}
+  "dependencies": {},
+  "scripts": {
+    "postinstall": "./node_modules/bower/bin/bower install"
+	}
 }
+
