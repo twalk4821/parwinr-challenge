@@ -1,6 +1,6 @@
 require 'httparty'
 
-class RequestController <; ApplicationController
+class RequestController < ApplicationController
 	respond_to :json
   def youtube
   	DEVELOPER_KEY = 'AIzaSyAPykhM0rrERLvFrsc6OoxxOVN2eC-Z930'
