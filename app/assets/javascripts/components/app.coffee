@@ -20,7 +20,7 @@ angular.module('parwinr')
 	bindToController: true
 	templateUrl: 'app.html'
 )
-.controller('appCtrl', ($scope, $http) ->
+.controller('appCtrl',['$scope', '$http', ($scope, $http) ->
 	$scope.videos = []	
 
 	$scope.getVideos = () ->
@@ -47,4 +47,4 @@ angular.module('parwinr')
     	return new Array(num) 
 	$scope.incrementRows = (row) -> 
 		this.rows[row] += 1
-)
+])

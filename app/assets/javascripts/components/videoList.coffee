@@ -9,7 +9,7 @@ angular.module('parwinr')
 	bindToController: true,
 	templateUrl: 'videoList.html'
 )
-.controller('videoListCtrl', ($scope) ->
+.controller('videoListCtrl', ['$scope', ($scope) ->
 	console.log(this)
 	this.max = 5
 	this.setMax = () ->
@@ -25,4 +25,4 @@ angular.module('parwinr')
 	$scope.rangeFromMax = this.rangeFromMax
 	$scope.incrementMax = this.incrementMax
 	$scope.max = this.max
-)
+])

@@ -14,6 +14,6 @@ angular.module('parwinr')
 			url = scope.videoListItem.video
 			video.src = url
 )
-.controller('videoListItemCtrl', ($scope) ->
+.controller('videoListItemCtrl', ['$scope', ($scope) ->
 	if this.video then scope.setVideo()
-)
+])
